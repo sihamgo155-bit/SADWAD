@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0b0e">
+<title>CIA Morocco RP | Command Roster</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">CIA</span><span><b>CIA MOROCCO RP</b><small>COMMAND ROSTER · ROLEPLAY ONLY</small></span></a>
+  <nav><a href="#roster">Personnel</a><a href="#structure">Structure</a><button id="editToggle" class="outline">Edit roster</button></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span class="pulse"></span> SECURE PERSONNEL DIRECTORY <span class="line"></span> <span>MR-09</span></div>
+    <h1>COMMAND <em>ROSTER</em></h1>
+    <p class="intro">A fictional personnel directory for CIA Morocco RP. Ranks and assignments are managed by the server leadership.</p>
+    <div class="hero-stats">
+      <div><strong id="memberCount">10</strong><span>LISTED MEMBERS</span></div>
+      <div><strong id="rankCount">9</strong><span>RANK CATEGORIES</span></div>
+      <div><strong>RP</strong><span>FICTIONAL UNIT</span></div>
+    </div>
+  </section>
+  <section class="roster-section" id="roster">
+    <div class="section-heading"><div><span class="eyebrow red">01 / PERSONNEL FILES</span><h2>Personnel <em>Directory</em></h2></div><div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search name or rank…" aria-label="Search name or rank"></div></div>
+    <div id="editor" class="editor hidden">
+      <div class="editor-title"><span>LOCAL EDIT MODE</span><span>Changes stay in this browser</span></div>
+      <p>Edit the roster below, then press <b>Save changes</b>. This demo does not sync between devices or users.</p>
+      <textarea id="rosterJson" spellcheck="false" aria-label="Roster data"></textarea>
+      <div class="editor-actions"><button id="saveRoster" class="primary">Save changes</button><button id="resetRoster" class="outline">Reset defaults</button><span id="editMessage" role="status"></span></div>
+    </div>
+    <div id="rosterGrid" class="roster-grid"></div>
+  </section>
+  <section class="structure" id="structure">
+    <span class="eyebrow red">02 / CHAIN OF COMMAND</span><h2>Command <em>Structure</em></h2>
+    <div class="structure-list" id="structureList"></div>
+  </section>
+</main>
+<footer><span class="footer-mark">CIA / MR</span><span>UNOFFICIAL ROLEPLAY PROJECT · NOT AFFILIATED WITH ANY GOVERNMENT AGENCY</span><span>© <span id="year"></span> CIA MOROCCO RP</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
